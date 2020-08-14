@@ -9,56 +9,76 @@
 </head>
 <body>
     <!--nav section-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"><img src="/assets/css/img/Logo.svg" alt=""></span>
-        </button>
-        <a class="navbar-brand" href="#">Navbar</a>
-      
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
-        </div>
+    <nav class="navbar">
+      <div class="navbar_drop">
+        <a class="navbar_drop--link" href="#">Acerca de</a>
+        <a class="navbar_drop--link" href="#">Caraterísticas</a>
+        <a class="navbar_drop--link" href="#">Precios</a>
+      </div>
+      <div class="navbar_action">
+        <button>Iniciar Sesión</button>
+        <button>Registrarse</button>
+      </div>
     </nav>
+
+
     <!--main -->
       <main class="main">
      <!--portada-->
         <section class="main__treking" >
-            <a href="#" class="logo"></a>
-            <h2>Haz trekking sin parar</h2>
+            <a href="#" class="logo"><img src="assets/css/img/bg-hero.svg" alt=""></a>
+            <div class="main__treking--text">
+              <h2>Haz trekking sin parar</h2>
             <p>con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición</p>
 
+            </div>
         </section>
 
         <!--caracteristicas-->
         <section class="main__caract"> 
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-        </section>
+          <div class="main__title">
+            <h2>Caracteristicas</h2>
+          </div>
+          <div class="main__image">
+            <img src="assets/css/img/bar-graph.svg" alt="">
+          </div>
+          <div class="main__text">
+            <h3>Estadísticas de tu progreso</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia nostrum ut ratione quas neque atque optio et numquam nobis ipsum labore, deserunt aut? Illum pariatur accusamus quis. Debitis, corporis.</p>
+          </div>
+            <h3>Estadísticas de tu progreso</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia nostrum ut ratione quas neque atque optio et numquam nobis ipsum labore, deserunt aut? Illum pariatur accusamus quis. Debitis, corporis.</p>
+        
+          </section>
 
-
+        
         <!--precios-->
         <section class="main__price">
-            <img src="" alt="">
+          <img src="assets/css/img/bg-price.svg" alt="">
+          <div class="main__title">
+            <h2>Precios</h2>
+          </div>
+            
+            <div class="main__card">
+                <h3>trekk-in-free</h3>
+              <h2>0 / mes</h2>
+              <hr>
+              <li>Ver mapas usados</li>
+              <li>Concertar con otros usuarios</li>
+              <hr>
+              <button>Obtén free</button>
+            </div>
+            
+            
+
         </section>
 
         <!--footer-->
         <section class="main__footer">
-        
+          <a href="">Legal</a>
+          <a href="">Cookies</a>
+          <a href="">Sobre anuncios</a>
+        <div class="main__footer--text">@2018 trekk-in-SPA</div>
         </section>
        
       </main>
