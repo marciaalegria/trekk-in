@@ -1,0 +1,67 @@
+
+//vista escritorio
+
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:15px 0;
+    margin-right: 20px;
+}
+    .menu{ 
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .lista{
+        display: flex;
+        align-items: center;
+    }
+    .items{
+        margin-right: 15px;
+        list-style-type: none;
+
+        &--active{
+            padding: 20px;
+            margin-right: 15px;
+            display: flex;
+            align-items: center;
+            background-color: $blue;
+            color: $white;        
+            width: 5em;
+            height: 0.6em;
+        }
+    }
+
+    .action{
+        display: flex;
+        align-items: center;
+    }
+    .lista2{
+        display:flex;
+        align-items: center;
+    }
+    .dropdown{
+        display:none;
+    }
+    .icon{
+        margin: 15px;
+        font-size: 40px;
+    }
+
+// vista mobile
+@include respond-to($md){
+    .navegacion{
+        display:none;
+    }
+
+    .dropdown{
+        display:flex;
+        justify-content: flex-end;
+        font-size: $large;
+
+        #mylinks{
+            display: none;
+        }
+    }
+}

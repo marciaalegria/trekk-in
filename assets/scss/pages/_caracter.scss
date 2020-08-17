@@ -1,0 +1,14 @@
+.caracter{
+    
+    &__content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    &__image{
+        
+        width: 320px;
+        height: 165px;
+        background-image: url("/assets/css/img/bar-graph.svg");
+    }
+}

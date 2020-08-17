@@ -4,86 +4,118 @@
     <!--metatags-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/a06c5afb79.js" crossorigin="anonymous"></script>
     <title>startupTreking</title>
 </head>
 <body>
-    <!--nav section-->
-    <nav class="navbar">
-      <div class="navbar_drop">
-        <a class="navbar_drop--link" href="#">Acerca de</a>
-        <a class="navbar_drop--link" href="#">Caraterísticas</a>
-        <a class="navbar_drop--link" href="#">Precios</a>
+<main class="container">
+  <nav class="navbar">
+    <div class="logo">
+    </div>
+    <div class="navegacion">
+      <div class="menu">
+        <ul class="lista">
+          <li class="items"><a href="">Acerca de</a></li>
+          <li class="items"><a href="">Caracteristicas</a></li>
+          <li class="items"><a href="">precios</a></li>
+        </ul>
       </div>
-      <div class="navbar_action">
-        <button>Iniciar Sesión</button>
-        <button>Registrarse</button>
+      <div class="action">
+        <ul class="lista2">
+          <li class="items"><a href="">Iniciar Sesión</a></li>
+          <li class="items--active">Registrate</li>
+        </ul>
       </div>
-    </nav>
+    </div>
+    <div class="dropdown">
+      <ul class="lista" id="mylinks">
+        <li class="items"><a href="">Acerca de</a></li>
+        <li class="items"><a href="">Caracteristicas</a></li>
+        <li class="items"><a href="">precios</a></li>
+        <li class="items"><a href="">Iniciar Sesión</a></li>
+        <li class="items"><a href="">Registrate</a></li>
+      </ul>
+      <a href="javascript:void(0);" class="icon" onclick="funcion()">
+        <i class="fas fa-bars"></i>
+      </a>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="hero__image">
+      <div class="hero__text">
+      <h2 class="hero__h2">Haz Trekking sin Parar</h2>
+      <p>con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición</p>
+    </div>
+    </div>
+
+  </section>
+  <article class="caracter">
+    <h2>Características</h2>
+    <div class="caracter__content">
+      <div class="caracter__image"></div>
+      <div>
+        <h3 class="caracter__text">Estadísticas de tu progreso</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam rerum, assumenda asperiores doloribus id sed, deserunt aut hic distinctio temporibus, dolorem eos dicta maxime ab nihil sunt officia expedita dignissimos?</p>
+      </div>
+    </div>
+  </article>
+  <div class="price">
+    <div class="price__image">
+      <div class="price__text">
+      <h2 class="price__ti">Precios</h2>
+    <div class="price__cards">
+      <h3 class="price__tittle">Trekk-in-Free</h3>
+      <h1 class="price__mes">$ 0 al mes</h1>
+      <hr>
+      <li>Ver mapas creados por usuarios</li>
+      <li>concertar con otros usuarios</li>
+      <br>
+      <hr>
+      <li class="price__button"><a href="">Obtén Free</a></li>
+    </div>
+    <div class="price__cards">
+      <h3 class="price__tittle">Trekk-in-Free</h3>
+      <h1 class="price__mes">$ 3500 al mes</h1>
+      <hr>
+      <li>Ver mapas creados por usuarios</li>
+      <li>concertar con otros usuarios</li>
+      <li>Definir mejores rutas</li>
+      <li>Mapas Offline</li>
+      <li>Integración con otras aplicaciones</li>
+      <hr>
+      <li class="price__button"><a href="">Obtén Premiun</a></li>
+    </div>
+    </div>
+    </div>
+
+    
+  </div>
+  <footer class="footer">
+    <ul class="footer__list">
+    <li class="items">Legal</li>
+    <li class="items">Cookies</li>
+    <li class="items">Sobre anuncios</li>
+    </ul>
+
+    <p>@2918 Trekk-in SPA</p>
+  </footer>
+</main>
 
 
-    <!--main -->
-      <main class="main">
-     <!--portada-->
-        <section class="main__treking" >
-            <a href="#" class="logo"><img src="assets/css/img/bg-hero.svg" alt=""></a>
-            <div class="main__treking--text">
-              <h2>Haz trekking sin parar</h2>
-            <p>con Trekk-in te despreocuparás de la estimación de tu viaje, ya que con unos simples pasos podrás definir la mejor ruta a tomar con tus compañeros de expedición</p>
 
-            </div>
-        </section>
 
-        <!--caracteristicas-->
-        <section class="main__caract"> 
-          <div class="main__title">
-            <h2>Caracteristicas</h2>
-          </div>
-          <div class="main__image">
-            <img src="assets/css/img/bar-graph.svg" alt="">
-          </div>
-          <div class="main__text">
-            <h3>Estadísticas de tu progreso</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia nostrum ut ratione quas neque atque optio et numquam nobis ipsum labore, deserunt aut? Illum pariatur accusamus quis. Debitis, corporis.</p>
-          </div>
-            <h3>Estadísticas de tu progreso</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quia nostrum ut ratione quas neque atque optio et numquam nobis ipsum labore, deserunt aut? Illum pariatur accusamus quis. Debitis, corporis.</p>
-        
-          </section>
-
-        
-        <!--precios-->
-        <section class="main__price">
-          <img src="assets/css/img/bg-price.svg" alt="">
-          <div class="main__title">
-            <h2>Precios</h2>
-          </div>
-            
-            <div class="main__card">
-                <h3>trekk-in-free</h3>
-              <h2>0 / mes</h2>
-              <hr>
-              <li>Ver mapas usados</li>
-              <li>Concertar con otros usuarios</li>
-              <hr>
-              <button>Obtén free</button>
-            </div>
-            
-            
-
-        </section>
-
-        <!--footer-->
-        <section class="main__footer">
-          <a href="">Legal</a>
-          <a href="">Cookies</a>
-          <a href="">Sobre anuncios</a>
-        <div class="main__footer--text">@2018 trekk-in-SPA</div>
-        </section>
-       
-      </main>
     
 
-    
+    <script>
+      function funcion(){
+        var x = document.getElementById("mylinks");
+        if (x.style.display==="block"){
+          x.style.display="none";
+        }else{
+          x.style.display="block";
+        }
+      }
+    </script>
 </body>
 </html>

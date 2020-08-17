@@ -1,0 +1,16 @@
+
+@mixin button {
+  display: inline-block;
+  padding: 0.5em 0.5em;
+  text-decoration: none;
+  border: none;
+  background-color: $white;
+  height: 50px;
+  
+
+}
+@mixin respond-to($break-point) {
+  @media (max-width:$break-point){
+    @content;
+  }
+}

@@ -16,10 +16,12 @@ $nickel:#726f73;
 $silver: #aeacaf;
 
 //typography
-//typefaces:
-//bold:
-//regular:
-//openregular:
+
+$open: 'Open Sans', sans-serif;
+$raleway: 'Raleway', sans-serif;
+$bold: bold;
+
+
 
 //font sizes
 $xxxxx-large:50px;
@@ -32,3 +34,8 @@ $medium:16px;
 $small:14px;
 $x-small:12px;
 
+//breakpoints
+$sm: 576px;
+$md: 768px;
+
+$lg:1280px;
